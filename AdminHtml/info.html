@@ -11,25 +11,312 @@
 </head>
 
 <body>
-
     <form>
-
-        <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24"
-                        class="d-inline-block align-text-top">
-                    Admin
-                </a>
-                <button class="btn btn-outline-success me-2" type="button">Main button</button>
-                <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
+        <div class="container-fluid">
+            <!-- 네비게이션 바 -->
+            <div class="row">
+                <nav class="navbar bg-body-tertiary border">
+                    <a class="navbar-brand" href="#">
+                        <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24"
+                            class="d-inline-block align-text-top">
+                            Admin
+                    </a>
+                    <button class="btn btn-sm btn-outline-secondary" type="button">M</button>
+                </nav>
             </div>
-        </nav>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
+            <div class="row">
+                <!-- 왼쪽 사이드바 -->
+                <div class="col-2 border text-center p-3">
+                    <!-- Home -->
+                    <div class="mb-3">
+                        <button type="button" class="btn">Home</button>
+                    </div>
+
+                    <!-- 공지사항 -->
+                    <div class="mb-3">
+                        <button type="button" class="btn">공지사항</button>
+                    </div>
+
+                    <!-- 회원관리 -->
+                    <div class="row mb-3">
+                        <button class="btn btn-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseMember" aria-expanded="false" aria-controls="collapseExample">
+                            회원관리
+                        </button>
+                        <div class="collapse" id="collapseMember">
+                            <div>
+                                <button class="btn btn-light" type="button">
+                                    회원111
+                                </button>
+                            </div>
+                            <div>
+                                <button class="btn btn-light" type="button">
+                                    회원222
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 서비스관리 -->
+                    <div class="row mb-3">
+                        <button class="btn btn-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseService" aria-expanded="false" aria-controls="collapseExample">
+                            서비스관리
+                        </button>
+                        <div class="collapse" id="collapseService">
+                            <div>
+                                <button class="btn btn-light" type="button">
+                                    서비스111
+                                </button>
+                            </div>
+                            <div>
+                                <button class="btn btn-light" type="button">
+                                    서비스222
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 커뮤니케이션 -->
+                    <div class="row mb-3">
+                        <button class="btn btn-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseCommu" aria-expanded="false" aria-controls="collapseExample">
+                            커뮤니케이션
+                        </button>
+                        <div class="collapse" id="collapseCommu">
+                            <div>
+                                <button class="btn btn-light" type="button">
+                                    커뮤111
+                                </button>
+                            </div>
+                            <div>
+                                <button class="btn btn-light" type="button">
+                                    커뮤222
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 시스템관리 -->
+                    <div class="row mb-3">
+                        <button class="btn btn-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSystem" aria-expanded="false" aria-controls="collapseExample">
+                            시스템관리
+                        </button>
+                        <div class="collapse" id="collapseSystem">
+                            <div>
+                                <button class="btn btn-light" type="button">
+                                    코드관리
+                                </button>
+                            </div>
+                            <div>
+                                <button class="btn btn-light" type="button">
+                                    코드그룹관리
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 개인정보 관리 -->
+                    <div class="row mb-3">
+                        <button type="button" class="btn">개인정보 관리</button>
+                    </div>
+
+                    <!-- test -->
+                    <div class="row mb-3">
+                        <button class="btn btn-light" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            test
+                        </button>
+                        <div class="collapse" id="collapseExample">
+                            <div>
+                                <button class="btn btn-light" type="button">
+                                    test111
+                                </button>
+                            </div>
+                            <div>
+                                <button class="btn btn-light" type="button">
+                                    test222
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 오른쪽 입력 폼 -->
+                <!-- 여백 -->
+                <div class="col-10 bg-body-tertiary border">           
+                    <div class="row">
+                        <!-- 입력 폼 -->
+                        <div class="col-11 bg-white border" style="float: none; margin: 0 auto;">
+                            <div class="row bg-body-tertiary p-3">
+                                <h4>기본정보</h2>
+                            </div>
+
+                            <div class="row p-3">
+                                <!-- 코드그룹 -->
+                                <div class="row mb-5">
+                                    <div class="col-3 text-start">
+                                        <p>코드그룹<span style="color: red;">*</span></p>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>선택하세요</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- 코드 -->
+                                <div class="row mb-5">
+                                    <div class="col-3">
+                                        <p>코드<span style="color: red;">*</span></p>
+                                        <input type="text" class="form-control" placeholder="자동생성" disabled>
+                                    </div>
+                                    <div class="col-3">
+                                        <p>코드 (ANOTHER)</p>
+                                        <input type="text" class="form-control" placeholder="영대문자, 숫자">
+                                    </div>
+                                    <div class="col-3">
+                                        <p>코드 이름<span style="color: red;">*</span></p>
+                                        <input type="text" class="form-control" placeholder="한글, 영대소문자, 숫자">
+                                    </div>
+                                    <div class="col-3">
+                                        <p>코드 이름 (영문)</p>
+                                        <input type="text" class="form-control" placeholder="영대소문자, 숫자">
+                                    </div>
+                                </div>
+
+                                <!-- 사용여부 -->
+                                <div class="row mb-5">
+                                    <div class="col-3">
+                                        <p>사용여부<span style="color: red;">*</span></p>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-3">
+                                        <p>순서<span style="color: red;">*</span></p>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+
+                                <!-- 설명 -->
+                                <div class="row mb-5">
+                                    <div class="col-6">
+                                        <p>설명</p>
+                                        <div class="input-group">
+                                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 다국어 1-4 -->
+                                <div class="row mb-5">
+                                    <div class="col-3">
+                                        <p>다국어1</p>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-3">
+                                        <p>다국어2</p>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-3">
+                                        <p>다국어3</p>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-3">
+                                        <p>다국어4</p>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+
+                                <!-- 다국어 5-8 -->
+                                <div class="row mb-5">
+                                    <div class="col-3">
+                                        <p>다국어5</p>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-3">
+                                        <p>다국어6</p>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-3">
+                                        <p>다국어7</p>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-3">
+                                        <p>다국어8</p>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+
+                                <!-- 예비 (VARCHAR TYPE) -->
+                                <div class="row mb-5">
+                                    <div class="col-3">
+                                        <p>예비1 (VARCHAR TYPE)</p>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-3">
+                                        <p>예비2 (VARCHAR TYPE)</p>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-3">
+                                        <p>예비3 (VARCHAR TYPE)</p>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-3">
+                                        <p>예비4 (VARCHAR TYPE)</p>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+
+                                <!-- 예비 (INT TYPE) -->
+                                <div class="row mb-5">
+                                    <div class="col-3">
+                                        <p>예비1 (INT TYPE)</p>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-3">
+                                        <p>예비2 (INT TYPE)</p>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-3">
+                                        <p>예비3 (INT TYPE)</p>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-3">
+                                        <p>예비4 (INT TYPE)</p>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+
+                                <!-- 하단 버튼 -->
+                                <div class="row mb-5">
+                                    <div class="col-6 text-start">
+                                        <button type="button" class="btn btn-outline-secondary">B</button>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <button type="button" class="btn btn-primary">B</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
     </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 
 </body>
 

@@ -107,7 +107,7 @@
                         </button>
                         <div class="collapse" id="collapseSystem">
                             <div>
-                                <button class="btn" type="button">
+                                <button onclick="location.href='manageCode.html'" class="btn" type="button">
                                     코드관리
                                 </button>
                             </div>
@@ -121,7 +121,7 @@
 
                     <!-- 개인정보 관리 -->
                     <div class="row mb-3">
-                        <button type="button" class="btn">개인정보 관리</button>
+                        <button onclick="location.href='info.html'" type="button" class="btn">개인정보 관리</button>
                     </div>
 
                     <!-- test -->
@@ -160,8 +160,8 @@
                                 <!-- 코드그룹 -->
                                 <div class="row mb-5">
                                     <div class="col-3 text-start">
-                                        <p>코드그룹<span style="color: red;">*</span></p>
-                                        <select class="form-select" aria-label="Default select example">
+                                        <label for="exampleFormSelect1" class="form-label">코드그룹<span style="color: red;">*</span></label>
+                                        <select id="exampleFormSelect1" class="form-select" aria-label="Default select example">
                                             <option selected>선택하세요</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -173,28 +173,28 @@
                                 <!-- 코드 -->
                                 <div class="row mb-5">
                                     <div class="col-3">
-                                        <p>코드<span style="color: red;">*</span></p>
+                                        <label class="form-label">코드<span style="color: red;">*</span></label>
                                         <input type="text" class="form-control" placeholder="자동생성" disabled>
                                     </div>
                                     <div class="col-3">
-                                        <p>코드 (ANOTHER)</p>
-                                        <input type="text" class="form-control" placeholder="영대문자, 숫자">
+                                        <label for="exampleFormControlInputCode1" class="form-label">코드 (ANOTHER)</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInputCode1" placeholder="영대문자, 숫자">
                                     </div>
                                     <div class="col-3">
-                                        <p>코드 이름<span style="color: red;">*</span></p>
-                                        <input type="text" class="form-control" placeholder="한글, 영대소문자, 숫자">
+                                        <label for="exampleFormControlInputCode2" class="form-label">코드 이름<span style="color: red;">*</span></label>
+                                        <input type="text" class="form-control" id="exampleFormControlInputCode2" placeholder="한글, 영대소문자, 숫자">
                                     </div>
                                     <div class="col-3">
-                                        <p>코드 이름 (영문)</p>
-                                        <input type="text" class="form-control" placeholder="영대소문자, 숫자">
+                                        <label for="exampleFormControlInputCode3" class="form-label">코드 이름 (영문)</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInputCode3" placeholder="영대소문자, 숫자">
                                     </div>
                                 </div>
 
                                 <!-- 사용여부 -->
                                 <div class="row mb-5">
                                     <div class="col-3">
-                                        <p>사용여부<span style="color: red;">*</span></p>
-                                        <select class="form-select" aria-label="Default select example">
+                                        <label for="exampleFormSelect2" class="form-label">사용여부<span style="color: red;">*</span></label>
+                                        <select id="exampleFormSelect2" class="form-select" aria-label="Default select example">
                                             <option selected>Open this select menu</option>
                                             <option value="1">One</option>
                                             <option value="2">Two</option>
@@ -202,17 +202,17 @@
                                         </select>
                                     </div>
                                     <div class="col-3">
-                                        <p>순서<span style="color: red;">*</span></p>
-                                        <input type="text" class="form-control">
+                                        <label for="exampleFormControlInputCode4" class="form-label">순서<span style="color: red;">*</span></label>
+                                        <input type="text" class="form-control" id="exampleFormControlInputCode4">
                                     </div>
                                 </div>
 
                                 <!-- 설명 -->
                                 <div class="row mb-5">
                                     <div class="col-6">
-                                        <p>설명</p>
-                                        <div class="input-group">
-                                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                                        <label for="exampleFormControlInputGroup1" class="form-label">설명</label>
+                                        <div class="input-group" >
+                                            <textarea class="form-control" aria-label="With textarea" id="exampleFormControlInputGroup1"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -220,80 +220,80 @@
                                 <!-- 다국어 1-4 -->
                                 <div class="row mb-5">
                                     <div class="col-3">
-                                        <p>다국어1</p>
-                                        <input type="text" class="form-control">
+                                        <label for="exampleFormControlInputCode5" class="form-label">다국어1</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInputCode5">
                                     </div>
                                     <div class="col-3">
-                                        <p>다국어2</p>
-                                        <input type="text" class="form-control">
+                                        <label for="exampleFormControlInputCode6" class="form-label">다국어2</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInputCode6">
                                     </div>
                                     <div class="col-3">
-                                        <p>다국어3</p>
-                                        <input type="text" class="form-control">
+                                        <label for="exampleFormControlInputCode7" class="form-label">다국어3</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInputCode7">
                                     </div>
                                     <div class="col-3">
-                                        <p>다국어4</p>
-                                        <input type="text" class="form-control">
+                                        <label for="exampleFormControlInputCode8" class="form-label">다국어4</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInputCode8">
                                     </div>
                                 </div>
 
                                 <!-- 다국어 5-8 -->
                                 <div class="row mb-5">
                                     <div class="col-3">
-                                        <p>다국어5</p>
-                                        <input type="text" class="form-control">
+                                        <label for="exampleFormControlInputCode9" class="form-label">다국어5</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInputCode9">
                                     </div>
                                     <div class="col-3">
-                                        <p>다국어6</p>
-                                        <input type="text" class="form-control">
+                                        <label for="exampleFormControlInputCode10" class="form-label">다국어6</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInputCode10">
                                     </div>
                                     <div class="col-3">
-                                        <p>다국어7</p>
-                                        <input type="text" class="form-control">
+                                        <label for="exampleFormControlInputCode11" class="form-label">다국어7</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInputCode11">
                                     </div>
                                     <div class="col-3">
-                                        <p>다국어8</p>
-                                        <input type="text" class="form-control">
+                                        <label for="exampleFormControlInputCode12" class="form-label">다국어8</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInputCode12">
                                     </div>
                                 </div>
 
                                 <!-- 예비 (VARCHAR TYPE) -->
                                 <div class="row mb-5">
                                     <div class="col-3">
-                                        <p>예비1 (VARCHAR TYPE)</p>
-                                        <input type="text" class="form-control">
+                                        <label for="exampleFormControlInputCode13" class="form-label">예비1 (VARCHAR TYPE)</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInputCode13">
                                     </div>
                                     <div class="col-3">
-                                        <p>예비2 (VARCHAR TYPE)</p>
-                                        <input type="text" class="form-control">
+                                        <label for="exampleFormControlInputCode14" class="form-label">예비2 (VARCHAR TYPE)</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInputCode14">
                                     </div>
                                     <div class="col-3">
-                                        <p>예비3 (VARCHAR TYPE)</p>
-                                        <input type="text" class="form-control">
+                                        <label for="exampleFormControlInputCode15" class="form-label">예비3 (VARCHAR TYPE)</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInputCode15">
                                     </div>
                                     <div class="col-3">
-                                        <p>예비4 (VARCHAR TYPE)</p>
-                                        <input type="text" class="form-control">
+                                        <label for="exampleFormControlInputCode16" class="form-label">예비4 (VARCHAR TYPE)</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInputCode16">
                                     </div>
                                 </div>
 
                                 <!-- 예비 (INT TYPE) -->
                                 <div class="row mb-5">
                                     <div class="col-3">
-                                        <p>예비1 (INT TYPE)</p>
-                                        <input type="text" class="form-control">
+                                        <label for="exampleFormControlInputCode17" class="form-label">예비1 (INT TYPE)</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInputCode17">
                                     </div>
                                     <div class="col-3">
-                                        <p>예비2 (INT TYPE)</p>
-                                        <input type="text" class="form-control">
+                                        <label for="exampleFormControlInputCode18" class="form-label">예비2 (INT TYPE)</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInputCode18">
                                     </div>
                                     <div class="col-3">
-                                        <p>예비3 (INT TYPE)</p>
-                                        <input type="text" class="form-control">
+                                        <label for="exampleFormControlInputCode19" class="form-label">예비3 (INT TYPE)</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInputCode19">
                                     </div>
                                     <div class="col-3">
-                                        <p>예비4 (INT TYPE)</p>
-                                        <input type="text" class="form-control">
+                                        <label for="exampleFormControlInputCode20" class="form-label">예비4 (INT TYPE)</label>
+                                        <input type="text" class="form-control" id="exampleFormControlInputCode20">
                                     </div>
                                 </div>
 
